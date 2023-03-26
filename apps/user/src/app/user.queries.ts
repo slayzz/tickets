@@ -20,7 +20,6 @@ export class UserQueries {
     errorHandler: ackErrorHandler,
   })
   async getUser({ email }: UserGet.Request) {
-    console.log('GETUSER?');
     const user = await this.userRepository.findUser(email);
     if (!user) {
       throw new RpcError('user_not_found', 'user');
