@@ -10,9 +10,11 @@
 
 ## Development server
 
-Run `docker compose up` in root directory (That run rabbitmq & 2 mysql instances)
+Run `npm install`
 
-Run `nx run-many --target=serve --all --parallel=10` to run all services. 
+Run `docker compose up -d` in root directory (That run rabbitmq & 2 mysql instances)
+
+Run `npx nx run-many --target=serve --all --parallel=10` to run all services. 
 
 ---
 

@@ -1,5 +1,4 @@
-import { IsEnum, IsString } from 'class-validator';
-import { TicketStateStatus } from '@tickets/interfaces';
+import { IsString } from 'class-validator';
 
 export class AnswerTicketDto {
   @IsString()

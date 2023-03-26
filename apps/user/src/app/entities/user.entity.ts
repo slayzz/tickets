@@ -21,11 +21,4 @@ export class UserEntity implements IUser {
       email: this.email,
     }
   }
-
-  async setPassword(password) {
-    const salt = await genSalt(10);
-    this.passwordHash = await hash(password, salt);
-    return this;
-  }
-
 }

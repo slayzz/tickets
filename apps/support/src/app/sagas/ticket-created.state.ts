@@ -1,7 +1,6 @@
 import { TicketState } from './ticket.state';
 import { ITicket, TicketStateStatus } from '@tickets/interfaces';
 import { RpcError } from '@tickets/common';
-import { authorize } from 'passport';
 
 export class TicketCreatedState extends TicketState {
 

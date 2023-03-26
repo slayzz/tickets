@@ -1,11 +1,10 @@
-import { Body, Controller, Post, UnauthorizedException, UseGuards, UsePipes, ValidationPipe } from '@nestjs/common';
+import { Body, Controller, Post, UnauthorizedException, UsePipes, ValidationPipe } from '@nestjs/common';
 import { AmqpConnection } from '@golevelup/nestjs-rabbitmq';
 import { AuthLogin, AuthRegister } from '@tickets/contracts';
 
 import { RegisterDto } from './dtos/register.dto';
 import { LoginDto } from './dtos/login.dto';
 import { EXHANGES } from '@tickets/rmq';
-import { JwtAuthGuard } from '../guards/jwt.guard';
 
 @Controller('auth')
 export class AuthController {
